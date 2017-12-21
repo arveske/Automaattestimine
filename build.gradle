@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.junit.platform:junit-platform-surefire-provider:1.0.2"
+    compile "org.junit.jupiter:junit-jupiter-engine:5.0.2"
+    testCompile "org.junit.jupiter:junit-jupiter-api:5.0.2"
+    compile "com.googlecode.json-simple:json-simple:1.1.1"
+    compile "org.mockito:mockito-core:2.10.0"
+}
