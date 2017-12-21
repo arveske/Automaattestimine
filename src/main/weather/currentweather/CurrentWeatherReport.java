@@ -1,20 +1,19 @@
 package main.weather.currentweather;
 
+import java.util.List;
+
 public class CurrentWeatherReport {
 
-	private double coord1;
-	private double coord2;
+	private List<Double> coord;
 	private double currentTemp;
 	private String city;
 	private String countryCode;
 	
-	CurrentWeatherReport(double coord1,
-						 double coord2,
+	CurrentWeatherReport(List<Double> coord,
 						 double currentTemp,
 						 String city,
 						 String countryCode) {
-		this.coord1 = coord1;
-		this.coord2 = coord2;
+		this.coord = coord;
 		this.currentTemp = currentTemp;
 		this.city = city;
 		this.countryCode = countryCode;
@@ -28,16 +27,16 @@ public class CurrentWeatherReport {
 			startLine += "Country code: " + countryCode + "\n";
 		}
 		return startLine +
-				"Coordinates: " + coord1 + ", " + coord2 + "\n" +
+				"Coordinates: " + coord.get(0) + ", " + coord.get(1) + "\n" +
 				"Current temperature: " + currentTemp;
 	}
 
 	public double getCoord1() {
-		return coord1;
+		return coord.get(0);
 	}
 
 	public double getCoord2() {
-		return coord2;
+		return coord.get(1);
 	}
 
 	public double getCurrentTemp() {

@@ -7,7 +7,9 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static java.time.temporal.ChronoUnit.DAYS;
@@ -20,18 +22,27 @@ public class ForecastRepository {
 	
 	private ForecastReport getForecast(String json) {
 		Map<String, String> result = parseForecastRequest(json);
-		
+
+		List<Double> coord = new ArrayList<>();
+		coord.add(Double.parseDouble(result.get("longitude")));
+		coord.add(Double.parseDouble(result.get("latitude")));
+
+		List<Double> forMax = new ArrayList<>();
+		forMax.add(Double.parseDouble(result.get("day1Max")));
+		forMax.add(Double.parseDouble(result.get("day2Max")));
+		forMax.add(Double.parseDouble(result.get("day3Max")));
+
+		List<Double> forMin = new ArrayList<>();
+		forMin.add(Double.parseDouble(result.get("day1Min")));
+		forMin.add(Double.parseDouble(result.get("day2Min")));
+		forMax.add(Double.parseDouble(result.get("day3Min")));
+
 		return new ForecastReport(
 				result.get("city"),
 				result.get("country"),
-				Double.parseDouble(result.get("longitude")),
-				Double.parseDouble(result.get("latitude")),
-				Double.parseDouble(result.get("day1Min")),
-				Double.parseDouble(result.get("day1Max")),
-				Double.parseDouble(result.get("day2Min")),
-				Double.parseDouble(result.get("day2Max")),
-				Double.parseDouble(result.get("day3Min")),
-				Double.parseDouble(result.get("day3Max")));
+				coord,
+				forMin,
+				forMax);
 	}
 	
 	public Map<String, String> parseForecastRequest(String json) {

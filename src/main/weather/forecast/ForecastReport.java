@@ -1,38 +1,25 @@
 package main.weather.forecast;
 
+import java.util.List;
+
 public class ForecastReport {
 	
 	private String city;
 	private String countryCode;
-	private double coord1;
-	private double coord2;
-	private double day1Min;
-	private double day1Max;
-	private double day2Min;
-	private double day2Max;
-	private double day3Min;
-	private double day3Max;
+	private List<Double> coord;
+	private List<Double> forMin;
+	private List<Double> forMax;
 	
 		ForecastReport(String city,
 				   String countryCode,
-				   double coord1,
-				   double coord2,
-				   double day1Min,
-				   double day1Max,
-				   double day2Min,
-				   double day2Max,
-				   double day3Min,
-				   double day3Max) {
+					   List<Double> coord,
+					   List<Double> forMin,
+					   List<Double> forMax) {
 		this.city = city;
 		this.countryCode = countryCode;
-		this.coord1 = coord1;
-		this.coord2 = coord2;
-		this.day1Min = day1Min;
-		this.day1Max = day1Max;
-		this.day2Min = day2Min;
-		this.day2Max = day2Max;
-		this.day3Min = day3Min;
-		this.day3Max = day3Max;
+		this.coord = coord;
+		this.forMax = forMax;
+		this.forMin = forMin;
 	}
 	
 	public String getCity() {
@@ -44,35 +31,35 @@ public class ForecastReport {
 	}
 	
 	public double getCoord1() {
-		return coord1;
+		return coord.get(0);
 	}
 	
 	public double getCoord2() {
-		return coord2;
+		return coord.get(1);
 	}
 	
 	public double getDay1Min() {
-		return day1Min;
+		return forMin.get(0);
 	}
 	
 	public double getDay1Max() {
-		return day1Max;
+		return forMax.get(0);
 	}
 	
 	public double getDay2Min() {
-		return day2Min;
+		return forMin.get(1);
 	}
 	
 	public double getDay2Max() {
-		return day2Max;
+		return forMax.get(1);
 	}
 	
 	public double getDay3Min() {
-		return day3Min;
+		return forMin.get(2);
 	}
 	
 	public double getDay3Max() {
-		return day3Max;
+		return forMax.get(2);
 	}
 	
 	@Override
@@ -83,10 +70,10 @@ public class ForecastReport {
 			startLine += "Country code: " + countryCode + "\n";
 		}
 		return startLine +
-				"Coordinates: " + coord1 + ", " + coord2 + "\n" +
+				"Coordinates: " + coord.get(0) + ", " + coord.get(1) + "\n" +
 				"Forecast:\n" +
-				"\tDay 1: " + day1Min + "; " + day1Max + "\n" +
-				"\tDay 2: " + day2Min + "; " + day2Max + "\n" +
-				"\tDay 3: " + day3Min + "; " + day3Max;
+				"\tDay 1: " + forMin.get(0) + "; " + forMax.get(0) + "\n" +
+				"\tDay 2: " + forMin.get(1) + "; " + forMax.get(1) + "\n" +
+				"\tDay 3: " + forMin.get(2) + "; " + forMax.get(2);
 	}
 }

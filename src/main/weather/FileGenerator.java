@@ -19,7 +19,7 @@ public class FileGenerator {
 			String country = null;
 
 			while ((line = in.readLine()) != null) {
-				String[] request = line.trim().split(",");
+				String[] request = line.trim().split("|");
 				city = request[0];
 
 				if (request.length > 1) {

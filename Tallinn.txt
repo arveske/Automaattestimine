@@ -1,6 +1,7 @@
-Place: Tallinn, EE
-Coordinates: 24.75, 59.44
-Day 1 forecast: 1.77; -0.07
-Day 2 forecast: -0.35; -3.06
-Day 3 forecast: -0.74; -3.71
-Current temperature: 1.0
+City / Country code: Tallinn/ EE
+Coordinates (x/y): 24.75, 59.44
+Current temperature: 3.0
+Forecast: 
+Day 1: 2.08; -0.23
+Day 2: 4.47; -0.71
+Day 3: 4.28; 1.18

@@ -5,7 +5,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class CurrentWeatherRepository {
@@ -16,10 +18,13 @@ public class CurrentWeatherRepository {
 	
 	public CurrentWeatherReport getCurrentWeather(String json) {
 		Map<String, String> result = parseCurrentWeatherRequest(json);
+
+		List<Double> coord = new ArrayList<>();
+		coord.add(Double.parseDouble(result.get("longitude")));
+		coord.add(Double.parseDouble(result.get("latitude")));
 		
 		return new CurrentWeatherReport(
-				Double.parseDouble(result.get("longitude")),
-				Double.parseDouble(result.get("latitude")),
+				coord,
 				Double.parseDouble(result.get("currentTemp")),
 				result.get("city"),
 				result.get("country"));
