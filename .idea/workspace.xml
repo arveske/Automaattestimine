@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff28f697-ad97-4665-8811-971c2873dc4b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Automaattestimine/main/weather/FileReadWrite.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Automaattestimine/main/weather/Main.class" afterPath="$PROJECT_DIR$/out/production/Automaattestimine/main/weather/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Automaattestimine/main/weather/currentweather/CurrentWeatherReport.class" afterPath="$PROJECT_DIR$/out/production/Automaattestimine/main/weather/currentweather/CurrentWeatherReport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Automaattestimine/main/weather/forecast/ForecastReport.class" afterPath="$PROJECT_DIR$/out/production/Automaattestimine/main/weather/forecast/ForecastReport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tallinn.txt" afterPath="$PROJECT_DIR$/Tallinn.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/weather/FileGenerator.java" afterPath="$PROJECT_DIR$/src/main/weather/FileGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/weather/currentweather/CurrentWeatherReport.java" afterPath="$PROJECT_DIR$/src/main/weather/currentweather/CurrentWeatherReport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/weather/currentweather/CurrentWeatherRepository.java" afterPath="$PROJECT_DIR$/src/main/weather/currentweather/CurrentWeatherRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/weather/forecast/ForecastReport.java" afterPath="$PROJECT_DIR$/src/main/weather/forecast/ForecastReport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/weather/forecast/ForecastRepository.java" afterPath="$PROJECT_DIR$/src/main/weather/forecast/ForecastRepository.java" />
-    </list>
+    <list default="true" id="ff28f697-ad97-4665-8811-971c2873dc4b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrentWeatherRepository.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CurrentWeatherRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/weather/currentweather/CurrentWeatherRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-237">
+            <state relative-caret-position="-203">
               <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileGenerator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FileGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/weather/FileGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
-              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+            <state relative-caret-position="352">
+              <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -743,8 +731,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1038" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -761,7 +749,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18495297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18495297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -907,16 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/weather/FileGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/weather/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -947,8 +925,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/weather/currentweather/CurrentWeatherRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
+        <state relative-caret-position="-203">
           <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/weather/FileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
