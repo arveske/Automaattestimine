@@ -35,7 +35,7 @@ public class ForecastRepository {
 		List<Double> forMin = new ArrayList<>();
 		forMin.add(Double.parseDouble(result.get("day1Min")));
 		forMin.add(Double.parseDouble(result.get("day2Min")));
-		forMax.add(Double.parseDouble(result.get("day3Min")));
+		forMin.add(Double.parseDouble(result.get("day3Min")));
 
 		return new ForecastReport(
 				result.get("city"),

@@ -1,0 +1,7 @@
+City / Country code: Narva/ RU
+Coordinates (x/y): 28.19, 59.38
+Current temperature: -2.17
+Forecast: 
+Day 1: 0.24; -5.3
+Day 2: -0.08; -3.39
+Day 3: 2.23; 0.38

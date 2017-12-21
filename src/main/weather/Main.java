@@ -18,7 +18,7 @@ public class Main {
             switch (sc.nextLine()) {
                 case "tex":
                     try {
-                        new FileGenerator().readFromFile();
+                        new InputReader().readFromFile();
                         System.out.println("Weather file added\n");
                     } catch (Exception e) {
                         System.out.println("Wrong command\n");
@@ -53,8 +53,8 @@ public class Main {
                 CurrentWeatherReport currentWeatherReport = currentWeatherRepository.getCurrentWeather(request);
                 ForecastReport forecastReport = forecastRepository.getForecast(request);
 
-                FileGenerator fileGenerator = new FileGenerator();
-                fileGenerator.writeToFile(currentWeatherReport, forecastReport);
+                FileWriter writer = new FileWriter(currentWeatherReport, forecastReport);
+                writer.writeToFile();
                 System.out.println("Weather file added\n");
             } catch (Exception e) {
                 System.out.println("Wrong name\n");
